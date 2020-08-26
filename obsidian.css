@@ -1,0 +1,150 @@
+/*
+ Magma - A Dark theme for Obsidian 
+ Made By Mayonnaise2124
+ */
+
+body {
+    font-size: 16px;
+    --font-monospace: Consolas, monaco, monospace;
+}
+
+.theme-dark {
+    /* Backgrounds: All the background Colors
+     - backgroud-primary: The background color of a panel
+     - background-prmary-alt: the color for the very edge of a panel
+     - background-secondary: The background color of side panels and and panel titles
+     - background-secondary-alt: The background color for the sidebar, and also the color of
+       the currently active panel's title
+     */
+    --background-primary: hsl(25, 4%, 12%);
+    --background-primary-alt: hsl(25, 2%, 8%);
+    --background-secondary: hsl(25, 3%, 15%);
+    --background-secondary-alt: hsl(25, 3%, 5%);
+
+    /* Modifier colors: For things like input boxes
+     - background-modifier-border: Modifier border
+     - background-modifier-form-field: The inside fill when not hovered over
+     - background-modifier-form-field-highlighted: The inside fill when hovered over
+    */
+    --background-modifier-border: hsl(25, 25%, 25%);
+    --background-modifier-form-field: hsl(25, 15%, 12%);
+    --background-modifier-form-field-highlighted: hsl(25, 15%, 10%);
+    --background-modifier-success: hsl(118, 76%, 57%);
+    --background-modifier-error: hsl(2, 76%, 57%);
+    --background-modifier-error-rgb: 229, 68, 62;
+    --background-modifier-error: hsl(2, 76%, 40%);
+    
+    /* Text-related colors
+     - text-accent: Color for links
+     - text-accent-hover: Hovered links color
+     - text-normal: Normal text color
+     - text-muted: Slightly fainter text
+     - text-faint: Very light text
+     - text-selection: Cursor selection color
+     */
+    --text-accent: hsl(27, 61%, 60%);
+    --text-accent-hover: hsl(27, 61%, 50%);
+    --text-normal: hsl(30, 53%, 93%);
+    --text-muted: hsl(31, 12%, 53%);
+    --text-faint: hsl(26, 3%, 39%);
+    --text-error: hsl(2, 76%, 57%);
+    --text-error-hover: hsl(2, 76%, 45%);
+    --text-selection: hsla(194, 62%, 42%, 0.39);
+    
+    /* Stuff for interactive colors
+     - interactive-accent: The highlight color under the title bar of the active panel
+     */
+    --interactive-normal: hsl(27, 40%, 60%);
+    --interactive-hover: hsl(27, 61%, 50%);
+    --interactive-accent: hsl(27, 61%, 60%);
+    --interactive-accent-rgb: 215, 147, 91;
+    --interactive-accent-hover: hsl(27, 61%, 50%);
+
+    /* Scrollbar colors: the color of the scrollbar
+     - scrollbar-active-thumb-bg: 
+     - scrollbar-bg: 
+     - scrollbar-thumb-bg: 
+     */
+    --scrollbar-active-thumb-bg: hsl(30, 50%, 51%);
+    --scrollbar-bg: hsl(30, 9%, 22%);
+    --scrollbar-thumb-bg: hsla(30, 44%, 45%, 0.904);
+
+    /* Custom: Pulsing Color: For pulsing animations */
+    --pulse-start: hsl(7, 61%, 60%);
+    --pulse-end: hsl(49, 61%, 60%);
+}
+
+
+/* Pulsing Colors for the active panel header */
+@keyframes headerPulse {
+    0% {
+        border-bottom-color: var(--pulse-start);
+    }
+
+    50% {
+        border-bottom-color: var(--pulse-end);
+    }
+
+    100% {
+        border-bottom-color: var(--pulse-start);
+    }
+}
+
+.workspace-leaf.mod-active .view-header {
+    animation: headerPulse 3s infinite;
+}
+
+
+/* Some stuff concerning the Graph View */
+
+/* Fill color of nodes */
+.graph-view.color-fill {
+    color: var(--interactive-normal);
+}
+
+/* Fill color of hovered nodes */
+.graph-view.color-fill-highlight {
+    color: var(--interactive-hover);
+}
+
+
+/* Fading Status Bar and Note Controls (Thanks to Rumen Dimitrov) */
+.status-bar:hover .status-bar-item {
+    opacity: 1;
+    transition: opacity .1s ease-in-out;
+}
+
+.status-bar:not(:hover) .status-bar-item {
+    opacity: 0.25;
+    transition: opacity .25s ease-in-out;
+}
+
+
+.view-header:hover .view-actions {
+    opacity: 1;
+    transition: opacity .1s ease-in-out;
+}
+
+.view-header:not(:hover) .view-actions {
+    opacity: 0.25;
+    transition: opacity .25s ease-in-out;
+}
+
+/* Pill Tags */
+.tag {
+    background-color: var(--text-accent);
+    border: none;
+    color: white;
+    font-size: 11px;
+    padding: 1px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px;
+    cursor: pointer;
+    border-radius: 14px;
+}
+.tag:hover {
+    color: white;
+    background-color: var(--text-accent-hover);
+}
