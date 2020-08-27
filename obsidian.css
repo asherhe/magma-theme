@@ -32,7 +32,7 @@ body {
     --background-modifier-success: hsl(118, 76%, 57%);
     --background-modifier-error: hsl(2, 76%, 57%);
     --background-modifier-error-rgb: 229, 68, 62;
-    --background-modifier-error: hsl(2, 76%, 40%);
+    --background-modifier-error-hover: hsl(2, 76%, 40%);
     
     /* Text-related colors
      - text-accent: Color for links
