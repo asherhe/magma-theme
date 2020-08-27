@@ -40,6 +40,7 @@ body {
      - text-normal: Normal text color
      - text-muted: Slightly fainter text
      - text-faint: Very light text
+     - text-highlight-bg: Highlight background for searches
      - text-selection: Cursor selection color
      */
     --text-accent: hsl(27, 61%, 60%);
@@ -49,16 +50,18 @@ body {
     --text-faint: hsl(26, 3%, 39%);
     --text-error: hsl(2, 76%, 57%);
     --text-error-hover: hsl(2, 76%, 45%);
+    --text-highlight-bg: hsl(28, 18%, 42%);
     --text-selection: hsla(194, 62%, 42%, 0.39);
     
     /* Stuff for interactive colors
      - interactive-accent: The highlight color under the title bar of the active panel
      */
     --interactive-normal: hsl(27, 40%, 60%);
-    --interactive-hover: hsl(27, 61%, 50%);
-    --interactive-accent: hsl(27, 61%, 60%);
-    --interactive-accent-rgb: 215, 147, 91;
-    --interactive-accent-hover: hsl(27, 61%, 50%);
+    --interactive-hover: hsl(27, 40%, 50%);
+    --interactive-accent: hsl(27, 67%, 49%);
+    --interactive-accent-rgb: 209, 117, 41;
+    --interactive-accent-hover: hsl(27, 52%, 40%);
+    --text-on-accent: var(--text-normal);
 
     /* Scrollbar colors: the color of the scrollbar
      - scrollbar-active-thumb-bg: 
@@ -91,7 +94,7 @@ body {
 }
 
 .workspace-leaf.mod-active .view-header {
-    animation: headerPulse 3s infinite;
+    animation: headerPulse 10s infinite;
 }
 
 
@@ -130,11 +133,14 @@ body {
     transition: opacity .25s ease-in-out;
 }
 
-/* Pill Tags */
+/* Tag Pills (Based on the design by _ph) */
 .tag {
-    background-color: var(--text-accent);
+    /* Magma Background */
+    background-color: var(--interactive-accent);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Cdefs%2F%3E%3Cpath%20fill%3D%27%233f3c39%27%20d%3D%27M0%200v4l1%201%203-2-1-3H0zm4%200l1%203%202%201%203-3-1.5-1H4zm5.5%200L11%201l-.5-1h-1zM12%200l2%201%20.333984-1H12zm3.75%200L15%203l1%201V0h-.25zM12%201l-1%201%202%203%201-3-2-1zm-2%202L8%205%207%209h2l3-3-2-3zm4%200l-1%203%202-1-1-2zM4%204L1%206l5%203%201-4-3-1zM0%206v3l1%201%204-1-5-3zm16%200l-2%201%202%202V6zm-3%201l-3%203%204%202%202-2-3-3zm-8%203l-4%201%203%204%203-1h2l-2-2-2-2zm1%200l4%204%202-2-4-2H6zm-6%201v3l1-2-1-1zm16%200l-2%202%202%201v-3zM2%2013l-2%202v1h3l-1-3zm11%200l-2%202%201%201h2.333984L15%2014l-2-1zm-6%202l-3%201h4.5L7%2015zm1%200l1.5%201h1l-.5-1H8zm8%200l-.25%201H16v-1z%27%2F%3E%3C%2Fsvg%3E");
+    background-size: 40px;
     border: none;
-    color: white;
+    color: var(--text-normal);
     font-size: 11px;
     padding: 1px 8px;
     text-align: center;
@@ -144,7 +150,8 @@ body {
     cursor: pointer;
     border-radius: 14px;
 }
+
 .tag:hover {
-    color: white;
-    background-color: var(--text-accent-hover);
+    color: var(--text-normal);
+    background-color: var(--interactive-accent-hover);
 }
