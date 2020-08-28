@@ -3,7 +3,7 @@
  Made By Mayonnaise2124
  */
 
-body {
+ body {
     font-size: 16px;
     --font-monospace: Consolas, monaco, monospace;
 }
@@ -79,6 +79,14 @@ body {
     --pulse-end: hsl(49, 61%, 60%);
 }
 
+/* Change Math and Code Block Color */
+.cm-math {
+    color: var(--text-muted) !important;
+}
+
+.cm-inline-code, code, .HyperMD-codeblock {
+    color: var(--text-muted) !important;
+}
 
 /* Pulsing Colors for the active panel header */
 @keyframes headerPulse {
@@ -146,6 +154,7 @@ body {
     background-color: hsl(27, 55%, 32%);
     background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2016%2016%27%3E%3Cdefs%2F%3E%3Cpath%20fill%3D%27%233f3c39%27%20d%3D%27M0%200v4l1%201%203-2-1-3H0zm4%200l1%203%202%201%203-3-1.5-1H4zm5.5%200L11%201l-.5-1h-1zM12%200l2%201%20.333984-1H12zm3.75%200L15%203l1%201V0h-.25zM12%201l-1%201%202%203%201-3-2-1zm-2%202L8%205%207%209h2l3-3-2-3zm4%200l-1%203%202-1-1-2zM4%204L1%206l5%203%201-4-3-1zM0%206v3l1%201%204-1-5-3zm16%200l-2%201%202%202V6zm-3%201l-3%203%204%202%202-2-3-3zm-8%203l-4%201%203%204%203-1h2l-2-2-2-2zm1%200l4%204%202-2-4-2H6zm-6%201v3l1-2-1-1zm16%200l-2%202%202%201v-3zM2%2013l-2%202v1h3l-1-3zm11%200l-2%202%201%201h2.333984L15%2014l-2-1zm-6%202l-3%201h4.5L7%2015zm1%200l1.5%201h1l-.5-1H8zm8%200l-.25%201H16v-1z%27%2F%3E%3C%2Fsvg%3E");
     background-size: 40px;
+    background-repeat: repeat repeat;
     border: none;
     color: var(--text-normal);
     font-size: 11px;
