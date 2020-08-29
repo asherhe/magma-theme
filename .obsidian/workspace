@@ -1,0 +1,128 @@
+{
+  "main": {
+    "id": "a472c9fd9b9b2e18",
+    "type": "split",
+    "children": [
+      {
+        "id": "192eb6280fe2f966",
+        "type": "leaf",
+        "dimension": 55.78034682080924,
+        "active": true,
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "source"
+          },
+          "pinned": true
+        },
+        "group": "cebf315ec2541373"
+      },
+      {
+        "id": "2c7ecee3d6d51e34",
+        "type": "leaf",
+        "dimension": 44.21965317919076,
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "README.md",
+            "mode": "preview"
+          },
+          "pinned": true
+        },
+        "group": "cebf315ec2541373"
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1bcb49fe4e5d5ba4",
+    "type": "split",
+    "children": [
+      {
+        "id": "25292c466014c8eb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a03bf325f7b1f07e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a4be20bb0e60f01e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {}
+            }
+          },
+          {
+            "id": "3409f994d4d05525",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "be1f578e2ba7b215",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff95d28f03ecac82",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5455a92c20069dcf",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          },
+          {
+            "id": "4726010b9d35693b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {}
+            }
+          },
+          {
+            "id": "ab64f9037c70ffe4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "README.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "lastOpenFiles": [
+    "README.md",
+    "Theme Test.md",
+    "img/Pasted image.png",
+    "img/note-1.png",
+    "img/note-screenshot.png"
+  ]
+}
