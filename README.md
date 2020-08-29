@@ -2,9 +2,9 @@
 A dark theme for Obsidian. Includes a dark UI with a tint of orange, and also a color-changing panel header. Contains a whole lotta orange.
 
 ## Screenshots
-![[note-screenshot.png]]
-![[note-1.png]]
-![[Pasted image.png]]
+![Screenshot of Note](/img/note-screenshot.png)
+![Screenshot of Note](/img/note-1.png)
+![Screenshot of Note](/img/Pasted image.png)
 
 ## Usage:
 
