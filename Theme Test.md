@@ -13,20 +13,25 @@ Here are some `Hello, World!` functions in multiple languages:
 ```java
 class HelloWorld {
     public static void main() {
+	    // A program that prints "Hello, World!"
 	    System.Out.println("Hello, World!");
+		int x = 0;
 	}
 }
 ```
 **Python**
 ```python
+# A program that prints "Hello, World!"
 print("Hello, World!")
 ```
 **Javascript**
 ```javascript
+// A program that prints "Hello, World!"
 console.log("Hello, World!");
 ```
 **HTML + JS**
 ```html
+<!-->A program that "prints" "Hello, World!" on the screen<!-->
 <!DOCTYPE html>
 <html>
   <head>

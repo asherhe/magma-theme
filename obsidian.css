@@ -171,3 +171,38 @@ a.tag:hover {
     color: var(--text-normal);
     background-color: hsl(30, 5%, 24%);
 }
+
+/* Code Syntax Highlighting */
+.token.comment {
+    color: hsl(36, 4%, 52%) !important;
+    font-style: oblique;
+}
+
+.token.keyword {
+    color: hsl(29, 63%, 60%) !important;
+    font-weight: bolder;
+}
+
+.token.punctuation {
+    color: hsl(0, 0%, 69%) !important;
+}
+
+.token.class-name, .token.function {
+    color:hsl(214, 64%, 67%) !important;
+}
+
+.token.string {
+    color: hsl(113, 34%, 55%) !important;
+}
+
+.token.doctype {
+    color: hsl(88, 60%, 64%) !important;
+}
+
+.token.tag {
+    color: hsl(318, 78%, 69%) !important;
+}
+
+.token.dom.variable {
+    color: hsl(29, 34%, 54%) !important;
+}

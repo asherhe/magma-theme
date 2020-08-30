@@ -4,35 +4,29 @@
     "type": "split",
     "children": [
       {
-        "id": "192eb6280fe2f966",
+        "id": "1a1796f10c44a051",
         "type": "leaf",
-        "dimension": 55.78034682080924,
         "active": true,
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "Theme Test.md",
             "mode": "source"
-          },
-          "pinned": true
+          }
         },
-        "group": "cebf315ec2541373"
+        "group": "f95dc9b4547e1ab2"
       },
       {
-        "id": "2c7ecee3d6d51e34",
+        "id": "b14d772d0e10f4be",
         "type": "leaf",
-        "dimension": 44.21965317919076,
-        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "README.md",
+            "file": "Theme Test.md",
             "mode": "preview"
-          },
-          "pinned": true
+          }
         },
-        "group": "cebf315ec2541373"
+        "group": "f95dc9b4547e1ab2"
       }
     ],
     "direction": "vertical"
@@ -89,7 +83,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md"
+                "file": "Theme Test.md"
               }
             }
           },
@@ -107,7 +101,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "Theme Test.md"
               }
             }
           }
@@ -119,8 +113,8 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "README.md",
     "Theme Test.md",
+    "README.md",
     "img/Pasted image.png",
     "img/note-1.png",
     "img/note-screenshot.png"
